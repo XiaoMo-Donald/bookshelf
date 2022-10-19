@@ -16,8 +16,7 @@
     <body>
         <div id="BookShelfApp">
             <div class="bookshelf_title">我的书架</div>
-            <div v-for="(item,index) in books"
-                :index="index">
+            <div v-for="(item,index) in books" :key="index">
                 <div v-if="item.list.length!=0" class="bookshelf-group">
                     <div v-if="item.icon" class="bookshelf-group_icon">
                         <span> {{item.icon}}</span>
@@ -27,7 +26,7 @@
                     </div>
                     <ul class="bookshelf-group_books">
                         <li v-for="(book,bookIndex) in item.list"
-                            :index="bookIndex">
+                            :key="bookIndex">
                             <a v-if="book.isPdfLink" href="javascript:void(0)"
                                 class="book-cover"
                                 :title="book.name"
@@ -54,14 +53,11 @@
                                 </p>
                                 <p class="book-info_recommended">推荐指数：
                                     <span v-for="(star,starIndex) in
-                                        book.recommended" :index="starIndex"
+                                        book.recommended" :key="starIndex"
                                         class="book-info_recommended-star">⭐</span>
                                 </p>
-
                                 <div class="book-info_description">
-                                    <p class="book-info_description-text">
-                                        本书是CSS3领域的标准性著作，由资深Web前端工程师根据CSS3的最新技术标准撰写。内容极为全面、丰富和翔实，由浅入深地讲解了CSS3新特性的语法、功能和使用技巧，涵盖选择器、边框、背景、文本、颜色、UI、动画、新型盒模型、媒体查询、响应式设计等各种模块。
-                                    </p>
+                                    <p class="book-info_description-text">{{book.description}}</p>
                                 </div>
                             </div>
                         </li>
