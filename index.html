@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>书架</title>
+
+        <link rel="stylesheet" href="./libs/global.min.css">
+        <link rel="stylesheet" href="./book-shelf.css">
+
+        <script src="./libs/jquery.js"></script>
+        <script src="./libs/vue.min.js"></script>
+
+    </head>
+    <body>
+        <div id="BookShelfApp">
+            <div class="bookshelf_title">我的书架</div>
+            <div v-for="(item,index) in books"
+                :index="index">
+                <div v-if="item.list.length!=0" class="bookshelf-group">
+                    <div v-if="item.icon" class="bookshelf-group_icon">
+                        <span> {{item.icon}}</span>
+                    </div>
+                    <div v-if="item.group_name" class="bookshelf-group_name">
+                        {{item.group_name}}
+                    </div>
+                    <ul class="bookshelf-group_books">
+                        <li v-for="(book,bookIndex) in item.list"
+                            :index="bookIndex">
+                            <a :href="book.link" target="_blank"
+                                class="book-cover" :title="book.name">
+                                <img class="book-cover_img" :src="book.cover"
+                                    :alt="book.name">
+                            </a>
+                            <div class="book-info">
+                                <h3 class="book-info_name">
+                                    <span class="book-info_name-text">{{book.name}}</span>
+                                </h3>
+                                <p class="book-info_author">书籍作者：{{book.author}}</p>
+                                <p class="book-info_author">出版时间：{{book.publishTime}}</p>
+                                <p class="book-info_record">读书笔记：<a
+                                        target="_blank"
+                                        :href="book.readRecordLink||'javascript:void(0)'">{{book.readRecordText}}</a>
+                                </p>
+                                <p class="book-info_recommended">推荐指数：
+                                    <span v-for="(star,starIndex) in
+                                        book.recommended" :index="starIndex"
+                                        class="book-info_recommended-star">⭐</span>
+                                </p>
+
+                                <div class="book-info_description">
+                                    <p class="book-info_description-text">
+                                        本书是CSS3领域的标准性著作，由资深Web前端工程师根据CSS3的最新技术标准撰写。内容极为全面、丰富和翔实，由浅入深地讲解了CSS3新特性的语法、功能和使用技巧，涵盖选择器、边框、背景、文本、颜色、UI、动画、新型盒模型、媒体查询、响应式设计等各种模块。
+                                    </p>
+                                </div>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="./book-shelf.js"></script>
+    </body>
+</html>
