@@ -1,0 +1,75 @@
+[
+  {
+    "icon": "📖",
+    "group_name": "前端开发书籍",
+    "list": [
+      {
+        "name": "css世界",
+      "cover": "../covers/cssweb.jpg",
+        "author": "小莫唐尼",
+        "publishTime": "2022年10月19日",
+        "link": "../books/精通CSS高级Web标准解决方案.pdf",
+        "readRecordText": "学习中",
+        "readRecordLink": "",
+        "recommended": 5
+      },
+      {
+        "name": "跟我学Nginx+Lua开发",
+      "cover": "../covers/cssweb.jpg",
+        "author": "小莫唐尼",
+        "publishTime": "2022年10月19日",
+        "link": "../books/精通CSS高级Web标准解决方案.pdf",
+        "readRecordText": "学习中",
+        "readRecordLink": "",
+        "recommended": 5
+      },
+      {
+        "name": "精通CSS高级Web标准解决方案",
+        "cover": "../covers/cssweb.jpg",
+        "author": "小莫唐尼",
+        "publishTime": "2022年10月19日",
+        "link": "../books/精通CSS高级Web标准解决方案.pdf",
+        "readRecordText": "学习中",
+        "readRecordLink": "",
+        "recommended": 5
+      }
+    ]
+  },
+  {
+    "icon": "📖",
+    "group_name": "四大名著",
+    "list": [
+      {
+        "name": "三国演义",
+        "cover": "../covers/sanguoyanyi.jpg",
+        "author": "小莫唐尼",
+        "publishTime": "2022年10月19日",
+        "link": "../books/精通CSS高级Web标准解决方案.pdf",
+        "readRecordText": "暂无",
+        "readRecordLink": "",
+        "recommended": 5
+      },
+      {
+        "name": "水浒传",
+        "cover": "../covers/sanguoyanyi.jpg",
+        "author": "小莫唐尼",
+        "publishTime": "2022年10月19日",
+        "link": "../books/精通CSS高级Web标准解决方案.pdf",
+        "readRecordText": "学习中",
+        "readRecordLink": "",
+        "recommended": 5
+      },
+      {
+        "name": "红楼梦",
+        "cover": "../covers/sanguoyanyi.jpg",
+        "author": "小莫唐尼",
+        "publishTime": "2022年10月19日",
+        "recommended": 5,
+        "link": "../books/精通CSS高级Web标准解决方案.pdf",
+        "readRecordText": "暂无",
+        "readRecordLink": "",
+        "recommended": 5
+      }
+    ]
+  }
+]
