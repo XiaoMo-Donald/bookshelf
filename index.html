@@ -28,8 +28,17 @@
                     <ul class="bookshelf-group_books">
                         <li v-for="(book,bookIndex) in item.list"
                             :index="bookIndex">
-                            <a :href="book.link" target="_blank"
-                                class="book-cover" :title="book.name">
+                            <a v-if="book.isPdfLink" href="javascript:void(0)"
+                                class="book-cover"
+                                :title="book.name"
+                                @click.stop="fnShowDialog(book)">
+                                <img class="book-cover_img" :src="book.cover"
+                                    :alt="book.name">
+                            </a>
+                            <a v-else :href="book.link" target="_blank"
+                                class="book-cover"
+                                :title="book.name"
+                                @click.stop="fnShowDialog(book)">
                                 <img class="book-cover_img" :src="book.cover"
                                     :alt="book.name">
                             </a>
@@ -55,10 +64,14 @@
                                     </p>
                                 </div>
                             </div>
-
                         </li>
                     </ul>
                 </div>
+            </div>
+
+            <div class="bookshelf-dialog" :class="{'is-show':dialog.show}">
+                <div class="close-btn" @click.stop="fnCloseDialog()">×</div>
+                <embed :src="dialog.data.link">
             </div>
         </div>
 

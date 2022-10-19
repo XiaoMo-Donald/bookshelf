@@ -5,23 +5,25 @@
     "list": [
       {
         "name": "css世界",
-      "cover": "../covers/cssweb.jpg",
+        "cover": "../covers/cssweb.jpg",
         "author": "小莫唐尼",
         "publishTime": "2022年10月19日",
         "link": "../books/精通CSS高级Web标准解决方案.pdf",
         "readRecordText": "学习中",
         "readRecordLink": "",
-        "recommended": 5
+        "recommended": 5,
+        "isPdfLink": true
       },
       {
         "name": "跟我学Nginx+Lua开发",
-      "cover": "../covers/cssweb.jpg",
+        "cover": "../covers/cssweb.jpg",
         "author": "小莫唐尼",
         "publishTime": "2022年10月19日",
         "link": "../books/精通CSS高级Web标准解决方案.pdf",
         "readRecordText": "学习中",
         "readRecordLink": "",
-        "recommended": 5
+        "recommended": 5,
+        "isPdfLink": true
       },
       {
         "name": "精通CSS高级Web标准解决方案",
@@ -31,7 +33,8 @@
         "link": "../books/精通CSS高级Web标准解决方案.pdf",
         "readRecordText": "学习中",
         "readRecordLink": "",
-        "recommended": 5
+        "recommended": 5,
+        "isPdfLink": true
       }
     ]
   },
@@ -47,7 +50,8 @@
         "link": "../books/精通CSS高级Web标准解决方案.pdf",
         "readRecordText": "暂无",
         "readRecordLink": "",
-        "recommended": 5
+        "recommended": 5,
+        "isPdfLink": true
       },
       {
         "name": "水浒传",
@@ -57,7 +61,8 @@
         "link": "../books/精通CSS高级Web标准解决方案.pdf",
         "readRecordText": "学习中",
         "readRecordLink": "",
-        "recommended": 5
+        "recommended": 5,
+        "isPdfLink": true
       },
       {
         "name": "红楼梦",
@@ -65,10 +70,12 @@
         "author": "小莫唐尼",
         "publishTime": "2022年10月19日",
         "recommended": 5,
+        "isPdfLink": true,
         "link": "../books/精通CSS高级Web标准解决方案.pdf",
         "readRecordText": "暂无",
         "readRecordLink": "",
-        "recommended": 5
+        "recommended": 5,
+        "isPdfLink": true
       }
     ]
   }
