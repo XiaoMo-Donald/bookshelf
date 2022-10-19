@@ -12,7 +12,8 @@
         "readRecordText": "学习中",
         "readRecordLink": "",
         "recommended": 5,
-        "isPdfLink": true
+        "isPdfLink": true,
+        "description": "书籍简介，可能很长，但是没关系........"
       },
       {
         "name": "跟我学Nginx+Lua开发",
@@ -23,7 +24,8 @@
         "readRecordText": "学习中",
         "readRecordLink": "",
         "recommended": 5,
-        "isPdfLink": true
+        "isPdfLink": true,
+        "description": "书籍简介，可能很长，但是没关系........"
       },
       {
         "name": "精通CSS高级Web标准解决方案",
@@ -34,7 +36,8 @@
         "readRecordText": "学习中",
         "readRecordLink": "",
         "recommended": 5,
-        "isPdfLink": true
+        "isPdfLink": true,
+        "description": "书籍简介，可能很长，但是没关系........"
       }
     ]
   },
@@ -51,7 +54,8 @@
         "readRecordText": "暂无",
         "readRecordLink": "",
         "recommended": 5,
-        "isPdfLink": true
+        "isPdfLink": true,
+        "description": "书籍简介，可能很长，但是没关系........"
       },
       {
         "name": "水浒传",
@@ -62,20 +66,20 @@
         "readRecordText": "学习中",
         "readRecordLink": "",
         "recommended": 5,
-        "isPdfLink": true
+        "isPdfLink": true,
+        "description": "书籍简介，可能很长，但是没关系........"
       },
       {
         "name": "红楼梦",
         "cover": "./covers/sanguoyanyi.jpg",
         "author": "小莫唐尼",
         "publishTime": "2022年10月19日",
-        "recommended": 5,
-        "isPdfLink": true,
         "link": "./books/精通CSS高级Web标准解决方案.pdf",
         "readRecordText": "暂无",
         "readRecordLink": "",
         "recommended": 5,
-        "isPdfLink": true
+        "isPdfLink": true,
+        "description": "书籍简介，可能很长，但是没关系........"
       }
     ]
   }
